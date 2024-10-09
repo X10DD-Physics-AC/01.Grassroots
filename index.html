@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodMods - Drift Car Packs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .slideshow {
+            text-align: center;
+            margin: 20px auto;
+        }
+        #slide-img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        a {
+            color: #1a7f7f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .charts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .charts img {
+            width: 80%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .highlight {
+            font-size: 1.2em;
+            color: #1a7f7f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://imgur.com/WpqlEZO.png" alt="PodMods Header" style="width: 100%; max-width: 800px; border-radius: 10px;">
+            <h1>PodMods - Grassroots Drift and Touge</h1>
+            <p>Welcome to the Official Pod's Mods Assetto Mods page! Here you'll find links to my latest Car packs, Physics, and Tracks for drifting enthusiasts.</p>
+        </header>
+
+        <div id="slideshow" class="slideshow">
+            <img id="slide-img" src="https://imgur.com/z1ogDMK.png" alt="Slideshow Image" style="width: 100%; max-width: 800px; border-radius: 10px;">
+        </div>
+
+        <h2>Grassroots Car Pack Download</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1y9svUOW7isJMFDWXTNcMqUhHprxzDNtt/view?usp=drive_link" target="_blank">Download the Grassroots Car Pack</a></li>
+        </ul>
+
+        <h2>Exciting Features</h2>
+        <p class="highlight">Experience true drifting dynamics with our uniquely tuned tire options and realistic engine performance.</p>
+
+        <div class="charts">
+            <h3>Tire Characteristics Overview</h3>
+            <img src="tire_characteristics_chart.png" alt="Tire Characteristics Chart">
+
+            <h3>Engine Options Overview</h3>
+            <img src="engine_options_chart.png" alt="Engine Options Chart">
+        </div>
+
+        <h2>Tracks</h2>
+        <ul>
+            <li><a href="https://drive.google.com/your-track-link-here" target="_blank">Pod's Touge Paradise</a></li>
+        </ul>
+        <p>For Force Feedback Setup, visit our <a href="https://discord.gg/your-discord-link" target="_blank">Discord community</a> for more info.</p>
+    </div>
+
+    <script>
+        const images = [
+            "https://imgur.com/z1ogDMK.png",
+            "https://i.imgur.com/3vzMSxq.jpg",
+            "https://i.imgur.com/cK9OtdV.png",
+            "https://i.imgur.com/8C5eGJQ.png",
+            "https://i.imgur.com/wgrjyC8.png",
+            "https://i.imgur.com/o1xut4V.png",
+            "https://i.imgur.com/F9Q5GMw.jpg",
+            "https://i.imgur.com/DGRtY3F.jpg",
+            "https://i.imgur.com/sXkbel3.jpg",
+            "https://i.imgur.com/oW72Jgz.jpg",
+            "https://i.imgur.com/FABcIlj.jpg",
+            "https://i.imgur.com/2tJ7rCn.png",
+            "https://i.imgur.com/74lbYTI.png",
+            "https://i.imgur.com/3zRP4rq.png",
+            "https://i.imgur.com/Fjz3N4c.png"
+        ];
+
+        let currentIndex = 0;
+        const slideImg = document.getElementById("slide-img");
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            slideImg.src = images[currentIndex];
+        }
+
+        setInterval(changeImage, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
