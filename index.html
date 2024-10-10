@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PodMods - Drift Car Packs</title>
+    <title>Grassroots Drift Car Pack</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +22,12 @@
         }
         header {
             text-align: center;
+            margin-bottom: 20px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin-bottom: 20px;
         }
         .slideshow {
@@ -57,13 +63,28 @@
             color: #1a7f7f;
             font-weight: bold;
         }
+        .icon-link img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="links">
+                <a href="https://www.patreon.com/user?u=80119694" target="_blank" class="icon-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Patreon_logo.svg" alt="Patreon Logo">
+                    Support on Patreon
+                </a>
+                <a href="https://www.youtube.com/@podcastprimate" target="_blank" class="icon-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+                    Subscribe on YouTube
+                </a>
+            </div>
             <img src="https://imgur.com/WpqlEZO.png" alt="PodMods Header" style="width: 100%; max-width: 800px; border-radius: 10px;">
-            <h1>PodMods - Grassroots Drift and Touge</h1>
+            <h1>Grassroots Drift and Touge</h1>
             <p>Welcome to the Official Pod's Mods Assetto Mods page! Here you'll find links to my latest Car packs, Physics, and Tracks for drifting enthusiasts.</p>
         </header>
 
@@ -71,7 +92,7 @@
             <img id="slide-img" src="https://imgur.com/z1ogDMK.png" alt="Slideshow Image" style="width: 100%; max-width: 800px; border-radius: 10px;">
         </div>
 
-        <h2>Grassroots Car Pack Download</h2>
+        <h2>Car Pack Download</h2>
         <ul>
             <li><a href="https://drive.google.com/file/d/1y9svUOW7isJMFDWXTNcMqUhHprxzDNtt/view?usp=drive_link" target="_blank">Download the Grassroots Car Pack</a></li>
         </ul>
@@ -88,10 +109,12 @@
         </div>
 
         <h2>Tracks</h2>
-        <ul>
-            <li><a href="https://drive.google.com/your-track-link-here" target="_blank">Pod's Touge Paradise</a></li>
-        </ul>
         <p>For Force Feedback Setup, visit our <a href="https://discord.gg/your-discord-link" target="_blank">Discord community</a> for more info.</p>
+
+        <h2>Preview Video</h2>
+        <div style="text-align: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IBKUF3Wo99c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
     <script>
@@ -121,7 +144,7 @@
             slideImg.src = images[currentIndex];
         }
 
-        setInterval(changeImage, 3000); // Change image every 3 seconds
+        setInterval(changeImage, 5000); // Change image every 5 seconds
     </script>
 </body>
 </html>
